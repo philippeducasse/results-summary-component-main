@@ -32,12 +32,13 @@ body {
     justify-content:center;
     font-family: Hanken Grotesk;
     margin: 100px auto;
-    height:min-content;
+    
 }
 
 
 .card {
     text-align: center;
+    max-height: 400px;
     
 }
 .card__left-side {
@@ -45,7 +46,7 @@ body {
     width: 100%;
     margin: 0;
     color: hsl(241, 100%, 89%);
-    height:auto;
+    
 }
 #card__left-side-title {
     font-size: 15px;
@@ -131,6 +132,9 @@ button {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
+img {float: left;
+    padding-right: 10px;
+}
 
 span{
     color:rgb(189, 189, 189);
@@ -173,10 +177,10 @@ button:hover {
     cursor: pointer;
     transition-duration: 0.5s;
 }
-@media (max-width:375px){
+@media (max-width:430px){
     body {
         margin: 0 auto;
-        height: auto;
+        
     }
     .card__left-side {
         border-bottom-left-radius: 10%;
@@ -191,7 +195,7 @@ button:hover {
 }
 
 
-@media (min-width:375px) and (max-width:1400px){
+@media (min-width:430px) and (max-width:1400px){
     
     body{
         flex-direction: column;
@@ -210,6 +214,8 @@ button:hover {
         flex-direction: row;
         max-width: 600px;
         margin: 0 auto;
+        border-radius: 10%;
+        box-shadow: 3px 3px hsl(221, 100%, 96%)
     }
     .card__left-side{
         width: 50%;
@@ -227,10 +233,13 @@ button:hover {
         font-size: 18px;
         padding-top: 20px;
     }
+    .grid-element{padding:15px}
+    button{padding: 15px;}
     #message-detail{
         font-size: 15px;
     }
     #message {
         font-size: 23px;
+        margin-top: 30px;
     }
 }
